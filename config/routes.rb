@@ -7,4 +7,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  
+  # ルートパスをHomeコントローラーのindexアクションに関連付ける
+  root 'home#index'
+  
+  #ホームからresult_trainへ
+  get 'result_train', to: 'home#result_train'
+  
+  #ホームからweightへ
+  get 'weight', to: 'home#weight'
 end
