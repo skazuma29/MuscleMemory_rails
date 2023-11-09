@@ -15,5 +15,5 @@ Rails.application.routes.draw do
   get 'result_train', to: 'home#result_train'
   
   #ホームからweightへ
-  get 'weight', to: 'home#weight'
+  get '/weight', to: 'weights#index'
 end
