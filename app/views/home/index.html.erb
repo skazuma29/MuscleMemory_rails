@@ -1,3 +1,6 @@
 <h1><%= link_to'Muscle Memory', root_path %></h1>
 <h2><%= link_to'result_train', result_train_path %></h2>
 <h2><%= link_to'weight', '/weight' %></h2>
+<% if user_signed_in? %>
+  <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+<% end %>
