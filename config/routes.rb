@@ -17,4 +17,7 @@ Rails.application.routes.draw do
   
   #ホームからweightへ
   get '/weight', to: 'weights#index'
+  
+  #weightController
+  resources :weights
 end
