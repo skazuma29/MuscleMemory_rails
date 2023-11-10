@@ -1,0 +1,16 @@
+<h1>体重を記録</h1>
+<%= form_for @weight do |f|%>
+  <div class="field">
+    <%= f.label :weight %>
+    <%= f.text_field :weight %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.date_field :date %>
+  </div>
+  
+  <div class="action">
+    <%= f.submit '体重を記録する' %>
+  </div>
+<% end %>
